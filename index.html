@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left  ">
+
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img src="Spotify-Logo.wine.png" alt=""></div>
+                <ul>
+                    <li><img class="invert " src="home 2.png" alt="">Home</li>
+                    <li><img class="invert " src="search icon.webp" alt="">Search</li>
+
+                </ul>
+            </div>
+            <div class="library bg-grey rounded  m-1 p-1">
+                <div class="heading ">
+                    <img class="invert" src="add-to-playlist.png" alt="">
+                    <h2>Your Library</h2>
+
+                </div>
+                <div class="songlist">
+                    <ul id="library-list">
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="footer">
+                <div><a href="https://www.spotify.com/jp/legal/"><span>legal</span></a></div>
+                <div><a href="https://www.spotify.com/jp/privacy"><span>Privacy center</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy"><span>privacy policy</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/cookies-policy"><span>cookies</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/jp/accessibility"><span>Accessibility</span></a></div>
+            </div>
+        </div>
+        <div class="right border bg-grey">
+            <div class="header">
+                <div class="nav invert">
+                    <img src="left-arrow.png" alt="">
+                    <img src="right-arrow.png" alt="">
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+
+            </div>
+            <div class="spotify-playlist">
+                <h1>Spotify playlist</h1>
+                <div class="Cardcontainer">
+                    <div class="card" data-playlist="happyhits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="download (6).jpg.jpeg" alt="">
+                        <h2>Happy Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="romantichits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="download (9).jpg.jpeg" alt="">
+                        <h2>Romantic Hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="retrohits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="download (11).jpg.jpeg" alt="">
+                        <h2>Retro hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="softhits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="ibiza feels.jpg.jpeg" alt="">
+                        <h2>Soft hits!</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="lovehits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="happy.jpg.jpeg" alt="">
+                        <h2>Love hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="oldhits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="lonavala pose.jpg.jpeg" alt="">
+                        <h2>Old hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="monsoonhits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="retro.jpg.jpeg" alt="">
+                        <h2>Monsoon hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                    <div class="card" data-playlist="partyhits">
+                        <img class="playbutton" src="play.png" alt="">
+                        <img src="retro.jpg.jpeg" alt="">
+                        <h2>Party Hits</h2>
+                        <p>Hits to boost your mood and fill you with happiness</p>
+                    </div>
+                </div>
+                <div class="playbar ">
+                    <div class="song-button">
+
+                        <div class="songinfo">
+                            <audio autoplay></audio>
+                        </div>
+                        <img id="prev-btn" src="pngegg (2).png" alt="">
+                        <img id="play-btn" src="pngegg (6).png" alt="">
+                        <img id="next-btn" src="pngegg (1).png" alt="">
+
+                    </div>
+                    <div class="songtime">
+                        <div class="now-playing">Song Title</div>
+                        <div class="time-row">
+                            <span class="current-time">0:00</span>
+                            <div class="seekbar invert">
+                                <div class="circle invert"></div>
+                            </div>
+                            <span class="total-duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
