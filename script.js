@@ -1,4 +1,4 @@
-const songs =  {
+const songs = {
     happyhits: [
 
         { src: "songs/song-1.mp3", title: "West Coast- Lana Del Rey" },
@@ -156,11 +156,9 @@ document.querySelectorAll(".playbutton").forEach((btn) => {
 
 document.querySelectorAll(".card").forEach((card) => {
     card.addEventListener("click", (e) => {
-        e.stopPropagation(); // prevent the card click event from firing
         currentPlaylist = card.dataset.playlist;
         loadPlaylist(currentPlaylist);
-        currentSongIndex = 0;
-        loadSong(currentSongIndex);
+
     });
 });
 // load the first song on page load
