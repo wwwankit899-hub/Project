@@ -120,8 +120,8 @@ body {
 }
 
 .Cardcontainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 12px;
     margin: 20px;
 }
@@ -330,88 +330,113 @@ body {
 }
 /* ===== TABLET (≤1024px) ===== */
 @media (max-width: 1024px) {
-    .card{
-        width: 200px;
-        height: 300px;
+    .card {
+        width: 220px;
     }
-    .playbar{
-        width: 90%;
+
+    .Cardcontainer {
+        justify-content: center;
+    }
+
+    .playbar {
+        width: 100%;
+        left: 0;
     }
 }
 
+
 /* ===== SMALL TABLET / LARGE PHONE (≤768px) ===== */
 @media (max-width: 768px) {
-    .container{
+    .container {
         flex-direction: column;
     }
-    .left{
+
+    .left {
         width: 100%;
         padding: 10px;
     }
-    .right{
+
+    .right {
         width: 100%;
         max-height: none;
     }
-    .cardContainer{
+
+    .Cardcontainer {
         justify-content: center;
     }
-    .card{
+
+    .card {
         width: 45%;
-        height: 260px;
+        height: auto;
     }
-    .card img{
+
+    .card img {
         height: 160px;
+        object-fit: cover;
     }
-    .playbar{
+
+    .playbar {
         width: 100%;
-        bottom: 0;
         left: 0;
+        bottom: 0;
         border-radius: 0;
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
-    .songtime{
+
+    .songtime {
         order: 3;
         width: 100%;
     }
-    .time-row{
+
+    .time-row {
         max-width: 100%;
     }
 }
 
+
 /* ===== PHONE (≤480px) ===== */
 @media (max-width: 480px) {
-    .heading{
+
+    .heading {
         font-size: 10px;
     }
-    .card{
+
+    .card {
         width: 90%;
-        height: 280px;
     }
-    .card img{
+
+    .card img {
         height: 180px;
     }
-    .spotifyPlaylists h1{
+
+    .spotify-playlist h1 {
         font-size: 20px;
     }
-    .playbar{
+
+    .playbar {
         padding: 8px;
     }
-    .playbar .songbuttons{
+
+    .song-button {
         gap: 12px;
         padding-left: 0;
     }
-    .now-playing{
+
+    .now-playing {
         font-size: 11px;
     }
+
     .current-time,
-    .total-duration{
+    .total-duration {
         font-size: 10px;
         min-width: 24px;
     }
-    .footer{
+
+    .footer {
         width: 100%;
         font-size: 9px;
+        flex-wrap: wrap;
     }
 }

@@ -5,29 +5,29 @@ const songs =  {
         { src: "songs/song-3.mp3", title: "The Stranglers- Golden Brown" },
     ],
     romantichits: [
-        { src: "songs/song-4.mp3", title: "song 4" },
-        { src: "songs/song-5.mp3", title: "Song 5" },
+        { src: "songs/song-4.mp3", title: "Bukhaar- Aroob Khan" },
+        { src: "songs/song-5.mp3", title: "Sad Girlz Luv Money- Kali Uchis" },
     ],
     retrohits: [
-        { src: "songs/song-2.mp3", title: "Song 2" },
+        { src: "songs/song-2.mp3", title: "They Call This Love- Matthew Ifield" },
     ],
     monsoonhits: [
 
-        { src: "songs/song-6.mp3", title: "Song 6" },
+        { src: "songs/song-6.mp3", title: "Jalebi Baby- Tesher" },
     ],
     partyhits: [
-        { src: "songs/song-7.mp3", title: "Song 7" },
+        { src: "songs/song-7.mp3", title: "Aao Kabhi Haveli Pe" },
     ],
     softhits: [
 
-        { src: "songs/song-8.mp3", title: "Song 8" },
+        { src: "songs/song-8.mp3", title: "Ajeeb Dasta- Lata Mangeshkar" },
     ],
     lovehits: [
-        { src: "songs/song-9.mp3", title: "Song 9" },
-        { src: "songs/song-10.mp3", title: "Song 10" },
+        { src: "songs/song-9.mp3", title: "Pehli Dafa- Atif Aslam" },
+        { src: "songs/song-10.mp3", title: "Tum Se Hi- Mohit Chauhan" },
     ],
     oldhits: [
-        { src: "songs/song-11.mp3", title: "Song 11" }
+        { src: "songs/song-11.mp3", title: "Haan Ke Haan- Monali Thakur" }
     ]
 };
 let currentPlaylist = "happyhits"
