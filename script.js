@@ -143,7 +143,7 @@ audio.addEventListener("ended", () => {
     loadSong(currentSongIndex)
 })
 // play buttons on cards
-document.querySelectorAll(".play").forEach((btn) => {
+document.querySelectorAll(".playbutton").forEach((btn) => {
     btn.addEventListener("click", (e) => {
         e.stopPropagation();// prevent the card click event from firing
         const card = btn.closest(".card");
